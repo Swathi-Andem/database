@@ -1,34 +1,105 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
 }
 
-h1 {
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #fff;
     text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-.place {
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.features {
+    padding: 50px 0;
+}
+
+.features h2 {
+    text-align: center;
     margin-bottom: 30px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.place img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.place h2 {
+.feature h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.place p {
+.feature p {
     font-size: 16px;
     color: #666;
 }
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
